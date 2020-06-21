@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorPrimaryDark">
+    <ImageView
+        android:layout_width="match_parent"
+        android:id="@+id/DetailImage"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:fadingEdge="horizontal"
+        android:scaleType="centerCrop"
+        app:srcCompat="@mipmap/cb" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="1">
+
+
+
+        <TextView
+            android:id="@+id/foodName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Chicken Biriyani"
+            android:textColor="@color/NeonGreen"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="6dp"
+            android:layout_marginTop="28dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="QUANTITY"
+                android:textSize="24sp"
+                android:textColor="@color/colorPrimaryWhite" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="24sp"
+                android:text="COST(Per Item)"
+                android:textColor="@color/colorPrimaryWhite" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:padding="6dp">
+
+            <EditText
+                android:id="@+id/Quantity"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="1"
+                android:textColor="@color/NeonGreen" />
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textColor="@color/NeonGreen"
+                    android:textSize="26sp"
+                    android:text="Rs "/>
+                <TextView
+                    android:id="@+id/foodPrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="105"
+                    android:textColor="@color/NeonGreen"
+                    android:textSize="26sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <Button
+            android:layout_marginTop="32dp"
+            android:id="@+id/Add"
+            android:background="@drawable/buttonstyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="@color/NeonGreen"
+            android:padding="8dp"
+            android:text="ADD TO CART" />
+    </LinearLayout>
+</LinearLayout>

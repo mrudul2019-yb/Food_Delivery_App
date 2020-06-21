@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="9"
+        android:background="@color/colorPrimaryMediumDark"
+        />
+    <LinearLayout
+        android:paddingTop="6dp"
+        android:paddingBottom="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:background="@color/colorPrimaryDark"
+        >
+        <TextView
+            android:layout_width="0dp"
+
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:paddingLeft="8dp"
+            android:textColor="@color/colorPrimaryWhite"
+            android:text="GRAND TOTAL:"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/grandTotal"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="@color/NeonGreen"
+
+            />
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:id="@+id/placeOrder"
+            android:background="@drawable/buttonstyle"
+            android:layout_height="wrap_content"
+            android:textColor="@color/NeonGreen"
+            android:text="Place order"/>
+    </LinearLayout>
+
+</LinearLayout>
